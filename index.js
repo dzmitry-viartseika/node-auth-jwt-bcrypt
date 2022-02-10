@@ -13,8 +13,7 @@ app.use('/auth', authRouter);
 
 const start = async () => {
     try {
-        await mongoose.connect('mongodb+srv://auth-jwt-bcrypt:wertey231090@cluster0.nboaf.mongodb.net/node-auth?retryWrites=true&w=majority'
-        ,{ useNewUrlParser: true, useUnifiedTopology: true })
+
 
         app.listen(port, () => {
             console.log(`Example app listening on port ${port}`)
